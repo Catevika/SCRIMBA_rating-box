@@ -1,0 +1,68 @@
+html,
+body {
+	margin: 20px;
+	padding: 0;
+	font-family: 'Architects Daughter', cursive;
+	color: whitesmoke;
+}
+
+#box {
+	padding: 10px;
+	display: block;
+	text-align: center;
+	padding: 10px;
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		90deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(253, 29, 29, 1) 50%,
+		rgba(252, 176, 69, 1) 100%
+	);
+	outline: ridge 10px rgb(255, 103, 103);
+	font-size: 4vw;
+}
+
+.typewriter {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	white-space: nowrap;
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: 0.15em; /* Adjust as needed */
+	-webkit-animation: typing 3.5s steps(40, end);
+	animation: typing 3.5s steps(40, end);
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+#emoji-container {
+	font-size: 10vw;
+}
+
+#box:focus {
+	outline: ridge 10px rgb(88, 53, 110);
+	transition: 0.5s;
+}
+
+#help-text {
+	display: none;
+	text-align: center;
+}
+
+#box:focus #help-text {
+	display: block;
+}
